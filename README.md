@@ -1,0 +1,2 @@
+# spring-rsocket-streaming-demo
+There are two RSocket clients client1 and client2 and RSocket server. What i am doing is storing client1 and client2 request on rsocket server using @connectmapping anotation on server using map. Then i send a rsocket request from both clients which then get stored on server. After that the either client send a message containing sender, receiver and content of message. the server use receiver to get rsocket requester from map. and used the rout method on that requester.
