@@ -124,7 +124,7 @@ public class RSocketShellClient {
         if (userIsLoggedIn()) {
             log.info("\n\n***** Channel (bi-directional streams)\n***** Asking for a stream of messages.\n***** Type 's' to stop.\n\n");
             
-            Message message = new Message(CLIENT_ID, "client1", "Hello From Client1" + CLIENT_ID);
+            Message message = new Message(CLIENT_ID, "client1", "Hello From " + CLIENT_ID);
     
             this.rsocketRequester
                     .route("channel")
