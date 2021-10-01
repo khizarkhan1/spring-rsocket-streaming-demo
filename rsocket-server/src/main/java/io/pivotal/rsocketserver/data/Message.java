@@ -1,13 +1,18 @@
 package io.pivotal.rsocketserver.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Flux;
 
+import java.awt.image.DataBuffer;
+import java.nio.ByteBuffer;
 import java.time.Instant;
 
 @Data
+@Slf4j
 @NoArgsConstructor
+@Setter
+@Getter
 public class Message {
     
     private String sender;
@@ -19,4 +24,5 @@ public class Message {
         this.receiver = receiver;
         this.content = content;
     }
+    
 }
